@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta name="author" content="Osman Zakir" />
+  <meta name="description" content="Google Maps + Currency Converter Web App with C++ server backend" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <title>DragonOsman Currency Converter</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137164146-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137164146-2');
+  </script>
+</head>
+<body>
+  <main>
+    <form class="outer-form">
+      <input id="search-input" class="controls" type="text" placeholder="Place, Country or Region Search" />
+    </form>
+  </main>
+  <section id="map"></section>
+  <script src="scripts/scripts.js"></script>
+  <script 
+    async 
+    defer
+    src="https://maps.googleapis.com/maps/api/js?v=3&key={{ googlekey | urlencode }}&libraries=places&callback=initMap"
+  ></script>
+</body>
+</html>

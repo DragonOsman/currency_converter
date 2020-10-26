@@ -1,0 +1,13 @@
+node_modules
+.cache
+.vs
+currency_converter.sln
+currency_converter/server_certificate.hpp
+currency_converter/currency_converter.vcxproj
+currency_converter/currency_converter.vcxproj.filters
+currency_converter/currency_converter.vcxproj.user
+currency_converter/.cache
+x64/Release/.well-known
+x64/Release/currency_converter.exe
+x64/Release/currency_converter.iobj
+x64/Release/currency_converter.pdb
