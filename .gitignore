@@ -7,7 +7,6 @@ currency_converter/currency_converter.vcxproj.filters
 currency_converter/currency_converter.vcxproj.user
 currency_converter/.cache
 currency_converter/x64
-currency_converter/x64/Release/currency_converter.log
 x64/Release/currency_converter.obj
 Release/currency_converter.ipdb
 x64/Release/.well-known
