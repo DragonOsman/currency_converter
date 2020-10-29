@@ -1,0 +1,38 @@
+{
+  "name": "currency_converter",
+  "version": "1.0.0",
+  "description": "C++ Web Server Currency Converter App with Google Maps UI",
+  "main": "scripts/scripts.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "anymatch": "^3.1.1",
+    "babel-eslint": "^10.1.0",
+    "chokidar": "^3.4.3",
+    "core-js": "^3.6.5",
+    "eslint": "^7.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-config-standard": "^15.0.0",
+    "eslint-plugin-standard": "^4.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragonOsman/currency_converter.git"
+  },
+  "keywords": [
+    "c++",
+    "currency-converter",
+    "web-server"
+  ],
+  "author": "Osman Zakir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DragonOsman/currency_converter/issues"
+  },
+  "homepage": "https://github.com/DragonOsman/currency_converter#readme"
+}
