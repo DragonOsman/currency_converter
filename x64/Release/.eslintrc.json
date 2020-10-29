@@ -4,33 +4,27 @@
         "es6": true
     },
     "extends": [
-      "eslint:recommended",
-      "standard"
+        "eslint:recommended",
+        "standard"
     ],
     "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-      "ecmaVersion": 2020,
-      "sourceType": "script",
-      "parser":  "babel"
+        "ecmaVersion": 2020,
+        "sourceType": "script",
+        "parser": "babel"
     },
     "rules": {
-        "eqeqeq": "error",
         "indent": [
             "error",
-            2
+            4
         ],
         "linebreak-style": [
             "error",
             "windows"
         ],
-        "lines-around-comment": "off",
-        "no-undef": "warn",
-        "no-unused-expressions": "warn",
-        "no-var": "error",
-        "prefer-const": "error",
         "quotes": [
             "error",
             "double"
@@ -39,8 +33,10 @@
             "error",
             "always"
         ],
+        "eqeqeq": "error",
         "space-before-function-paren": "off",
-        "space-in-parens": "off",
-        "yoda": "error"
+        "yoda": "error",
+        "no-var": "error",
+        "prefer-const": "error"
     }
 }
