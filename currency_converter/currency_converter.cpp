@@ -43,6 +43,7 @@
 #include <string>
 #include <thread>
 #include <nlohmann/json.hpp>
+#include "server_certificate.hpp"
 
 using json = nlohmann::json;			// from <nlohmann/json.hpp>
 using tcp = boost::asio::ip::tcp;       // from <boost/asio/ip/tcp.hpp>
