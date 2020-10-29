@@ -13,13 +13,13 @@
     },
     "parserOptions": {
         "ecmaVersion": 2020,
-        "sourceType": "script",
-        "parser": "babel"
+        "parser": "babel",
+        "sourceType": "script"
     },
     "rules": {
         "indent": [
             "error",
-            4
+            2
         ],
         "linebreak-style": [
             "error",
@@ -33,10 +33,11 @@
             "error",
             "always"
         ],
-        "eqeqeq": "error",
+        "prefer-const": "error",
         "space-before-function-paren": "off",
-        "yoda": "error",
         "no-var": "error",
-        "prefer-const": "error"
+        "eqeqeq": "error",
+        "yoda": "error",
+        "newline-before-return": "off"
     }
 }
