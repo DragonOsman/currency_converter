@@ -2,7 +2,6 @@ node_modules
 .cache
 .vs
 currency_converter.sln
-currency_converter/server_certificate.hpp
 currency_converter/currency_converter.vcxproj
 currency_converter/currency_converter.vcxproj.filters
 currency_converter/currency_converter.vcxproj.user
