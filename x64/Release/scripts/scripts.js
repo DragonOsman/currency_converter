@@ -24,6 +24,7 @@
 // line 1027.
 
 "use strict";
+
 const countryMap = {
   "Afghanistan": {
     "abbreviation": "AF",
