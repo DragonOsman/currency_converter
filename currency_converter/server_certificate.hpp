@@ -11,7 +11,6 @@
 	Load a signed certificate into the ssl context, and configure
 	the context for use with a server.
 */
-
 inline void load_server_certificate(boost::asio::ssl::context& ctx)
 {
 	const std::string cert_filename = "C:/Users/Osman/.acme.sh/dragonosman.dynu.net/fullchain.cer";
