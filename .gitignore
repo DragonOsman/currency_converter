@@ -7,6 +7,7 @@ currency_converter/currency_converter.vcxproj.filters
 currency_converter/currency_converter.vcxproj.user
 currency_converter/.cache
 x64/Release/currency.E8C8ACC1.tlog
+currency_converter/x64/Release/currency_converter.log
 x64/Release/currency_converter.Build.CppClean.log
 x64/Release/currency_converter.exe.recipe
 x64/Release/currency_converter.log
