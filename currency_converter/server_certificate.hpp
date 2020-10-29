@@ -3,18 +3,17 @@
 
 #include <boost/asio/buffer.hpp>
 #include <boost/asio/ssl/context.hpp>
+#include <cstddef>
 #include <fstream>
-
-#pragma comment(lib, "crypt32.lib")
 
 /*
 	Load a signed certificate into the ssl context, and configure
 	the context for use with a server.
 */
+
 inline void load_server_certificate(boost::asio::ssl::context& ctx)
 {
 	const std::string cert_filename = "C:/Users/Osman/.acme.sh/dragonosman.dynu.net/fullchain.cer";
-	
 	ctx.use_certificate_file(cert_filename, boost::asio::ssl::context_base::file_format::pem);
 
 	const std::string dh =
@@ -38,9 +37,8 @@ inline void load_server_certificate(boost::asio::ssl::context& ctx)
 		boost::asio::ssl::context::single_dh_use);
 
 	const std::string key_filename = "C:/Users/Osman/.acme.sh/dragonosman.dynu.net/dragonosman.dynu.net.key";
-	std::ifstream ifs2{ key_filename };
-	std::string key{ (std::istreambuf_iterator<char>(ifs2)),
-					 (std::istreambuf_iterator<char>()) };
+	std::ifstream ifs_key{ key_filename };
+	std::string key{ (std::istreambuf_iterator<char>(ifs_key)), (std::istreambuf_iterator<char>()) };
 
 	ctx.use_rsa_private_key(boost::asio::buffer(key.data(), key.size()), boost::asio::ssl::context::file_format::pem);
 
