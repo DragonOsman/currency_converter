@@ -8,5 +8,3 @@ The C++ code depends on Boost.Beast (https://github.com/boostorg/beast ), Jinja2
 This application has two environment variables declared in the C++ code.  Without them, the application won't work correctly.  Those environment variables are the Google Maps API Key and the currencylayer.com currency API Access Key.  
 
 I'm going to host the server app on my own computer (which is a laptop).  I'll only have it running when I'm using the computer it's on.  When the server app is running, it'll be available on this address: https://dragonosman.dynu.net:5501/
-
-I added server_certificate.hpp to .gitignore because it has the actual cert and RSA Private Key text in it and may cause my app's HTTPS security to compromise if people saw it.  
