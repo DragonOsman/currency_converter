@@ -1,4 +1,4 @@
-node_modules
+x64/Release/node_modules
 .cache
 .vs
 currency_converter.sln
