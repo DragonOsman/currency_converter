@@ -43,7 +43,6 @@
 #include <string>
 #include <thread>
 #include <nlohmann/json.hpp>
-#include "server_certificate.hpp"
 
 using json = nlohmann::json;			// from <nlohmann/json.hpp>
 using tcp = boost::asio::ip::tcp;       // from <boost/asio/ip/tcp.hpp>
@@ -510,7 +509,7 @@ void handle_request(boost::beast::string_view doc_root, http::request<Body, http
 			jinja2::Template tpl;
 			tpl.LoadFromFile(path.c_str());
 			jinja2::ValuesMap params{ { { "googlekey", std::string(googlekey) } } };
-			auto render_result = tpl.RenderAsString(params);
+			auto render_result{ tpl.RenderAsString(params) };
 
 			if (!render_result)
 			{
@@ -518,7 +517,7 @@ void handle_request(boost::beast::string_view doc_root, http::request<Body, http
 				std::string error_info_str = error_to_string(error_info);
 				return send(server_error(error_info_str));
 			}
-			auto &content = render_result.value();
+			auto& content{ render_result.value() };
 
 			http::response<http::string_body> res{
 				std::piecewise_construct,
